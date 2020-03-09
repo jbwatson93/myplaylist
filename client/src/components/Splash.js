@@ -7,7 +7,7 @@ class Splash extends Component {
         return (
             <div className='splashpage'>
             <div className='splashclick'>
-                <Link to={'/playlists'} className='link'> <h1>Enter Playlistify </h1> 
+                <Link to={'/playlists'} className='link'> <h1>My Playlist </h1> 
                     <h3> Create Playlists from different songs all over the web</h3> </Link>
                     </div>
             </div>

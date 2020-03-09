@@ -147,9 +147,11 @@ class Playlist extends Component {
                         <button className="controls" onClick={this.nowPlaying}>>|</button>
                     </div>
                     <div><button onClick={this.getsongid}>Get Lyrics</button></div>
+                    <div style={{marginHorizontal: '20px', width:'80%'}}> 
                     {this.state.playlists.songs.map((song, i) => (
                         <Song getSong={this.getPlaylists} id={song._id} name={song.name} artist={song.artist} index={i} nowplaying={this.state.nowPlaying} />
                     ))}
+                    </div>
                     <div> <input type='text' name='artist' placeholder='Artist' onChange={(e) => this.handleChange(e)} />
                         <input type='text' name='name' placeholder='Song' onChange={(e) => this.handleChange(e)} />
                         <input type='text' name='url' placeholder='URL' onChange={(e) => this.handleChange(e)} />
