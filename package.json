@@ -6,7 +6,7 @@
     "start": "node server.js",
     "dev": "concurrently \"nodemon server.js\" \"cd ./client  && npm start \" ",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "npm install && cd client && npm install"
+    "postinstall": "cd client && npm install3"
   },
   "dependencies": {
     "concurrently": "^4.1.0",
